@@ -8,13 +8,14 @@ To run the assignment code using clisp (you may need to download clisp):
   
 In the CLISP interpreter run:
 
-  ;; to load the file into clisp
+  // to load the file into clisp
   > (load "grammar_sks2187.lisp")
-  ;; to generate the first targeted sentence
-  > (targeted-sentence rules1)
-  ;; can also generate sentences 2-5 by changing rulesx to desired sentence number
   
-  ;; to run the loop and generate 10,000 invalid and valid sentences into one file
+  // to generate the first targeted sentence
+  > (targeted-sentence rules1)
+  // can also generate sentences 2-5 by changing rulesx to desired sentence number
+  
+  // to run the loop and generate 10,000 invalid and valid sentences into one file
   > (loop-run 10000)
   
 At this point you can use grep to separate the valid and invalid sentences. 
