@@ -7,11 +7,15 @@ To run the assignment code using clisp (you may need to download clisp):
   > $ clisp
   
 In the CLISP interpreter run:
+
   > (load "grammar_sks2187.lisp")
+  
 to load the file into clisp.
   
 To generate the first targeted sentence:
+
   > (targeted-sentence rules1)
+  
 and you can also generate sentences 2-5 by changing rulesx to desired sentence number.
   
 To run the loop and generate 10,000 invalid and valid sentences into one file:
@@ -20,4 +24,5 @@ To run the loop and generate 10,000 invalid and valid sentences into one file:
 At this point you can use grep to separate the valid and invalid sentences. 
 
   > $ cat output_sks2187.txt | grep '+ ' > valid.txt
+  
   > $ cat output_sks2187.txt | grep '\- ' > invalid.txt
